@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./style/App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import { useState } from "react";
+import "./style/App.css";
 
 function App() {
   const [showCart, setShowCart] = useState(false);

@@ -1,0 +1,9 @@
+.cart {
+  position: fixed;
+  background-color: #986B77;
+  color: white;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: clamp(414px, 25%, 25%);
+}

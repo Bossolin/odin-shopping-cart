@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../style/Shop.css";
 
 const Shop = () => {
   const [items, setItems] = useState(null);

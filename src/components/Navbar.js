@@ -1,8 +1,8 @@
 import React from "react";
+import "../style/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faShop } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
-import "../style/Navbar.css";
 
 const Navbar = ({ setShowCart }) => {
   const handleClick = () => {
