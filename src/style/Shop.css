@@ -1,0 +1,15 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.item {
+  width: clamp(200px, 25%, 25%);
+}
+
+.item img {
+  max-width: 25%;
+}

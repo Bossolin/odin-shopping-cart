@@ -19,17 +19,19 @@ const Shop = () => {
   return (
     <div className="shop">
       <h1>Shop</h1>
-      {!items ? (
-        <div>Loading...</div>
-      ) : (
-        items.map((item) => (
-          <div key={item.id} className="item">
-            <div className="item-title">{item.title}</div>
-            <img src={item.image} className="item-img" />
-            <div className="item-price">{item.price} $</div>
-          </div>
-        ))
-      )}
+      <div className="items">
+        {!items ? (
+          <div>Loading...</div>
+        ) : (
+          items.map((item) => (
+            <div key={item.id} className="item">
+              <img src={item.image} className="item-img" />
+              <div className="item-title">{item.title}</div>
+              <div className="item-price">{item.price} $</div>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 };
