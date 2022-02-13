@@ -3,21 +3,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faShop } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
-const Navbar = ({ onClick }) => {
-  const handleCart = () => {
-    onClick((prevState) => !prevState);
+const Navbar = ({ setShowCart }) => {
+  const handleClick = () => {
+    setShowCart((prevState) => !prevState);
   };
 
   return (
     <div className="navbar">
-      <FontAwesomeIcon icon={faShop} className="shop-icon" />
+      <NavLink to="/" className="shop-icon">
+        <FontAwesomeIcon icon={faShop} />
+      </NavLink>
       <NavLink to="/" className="nav-home">
         Home
       </NavLink>
       <NavLink to="/shop" className="nav-shop">
         Shop
       </NavLink>
-      <FontAwesomeIcon icon={faCartShopping} onClick={handleCart} />
+      <FontAwesomeIcon icon={faCartShopping} onClick={handleClick} />
     </div>
   );
 };

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +8,7 @@
 
 .App {
   text-align: center;
+  font-family: 'Jost', sans-serif;
 }
 
 .navbar {
@@ -25,4 +28,10 @@
 
 .shop-icon {
   margin-right: auto;
+}
+
+.footer {
+  padding: 1rem 2rem;
+  background-color: #798897;
+  color: white;
 }
