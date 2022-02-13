@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
           </Routes>
-          {showCart && <Cart />}
+          {showCart && <Cart setShowCart={setShowCart} />}
         </div>
         <Footer />
       </div>

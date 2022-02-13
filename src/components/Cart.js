@@ -1,7 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
-const Cart = () => {
-  return <div className="cart">Cart</div>;
+const Cart = ({ setShowCart }) => {
+  const handleClick = () => {
+    setShowCart((prevState) => !prevState);
+  };
+
+  return (
+    <div className="cart">
+      <FontAwesomeIcon icon={faX} onClick={handleClick} />
+      <h2>Cart</h2>
+    </div>
+  );
 };
 
 export default Cart;

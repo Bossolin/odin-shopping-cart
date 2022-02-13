@@ -35,3 +35,17 @@
   background-color: #798897;
   color: white;
 }
+
+.home, .shop {
+  min-height: calc(100vh - 6.8rem);
+}
+
+.cart {
+  position: fixed;
+  background-color: #986B77;
+  color: white;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: clamp(414px, 25%, 25%);
+}
