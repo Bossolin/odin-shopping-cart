@@ -11,24 +11,7 @@
   font-family: 'Jost', sans-serif;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  padding: 1rem 2rem;
-  background-color: #E3284D;
-  color: white;
-}
 
-.navbar a {
-  text-decoration: none;
-  color: white;
-}
-
-.shop-icon {
-  margin-right: auto;
-}
 
 .footer {
   padding: 1rem 2rem;

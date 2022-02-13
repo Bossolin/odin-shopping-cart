@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faShop } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "../style/Navbar.css";
 
 const Navbar = ({ setShowCart }) => {
   const handleClick = () => {
@@ -10,9 +11,9 @@ const Navbar = ({ setShowCart }) => {
 
   return (
     <div className="navbar">
-      <NavLink to="/" className="shop-icon">
+      <Link to="/" className="shop-icon">
         <FontAwesomeIcon icon={faShop} />
-      </NavLink>
+      </Link>
       <NavLink to="/" className="nav-home">
         Home
       </NavLink>
