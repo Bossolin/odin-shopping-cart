@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
+        <Navbar onClick={setShowCart} />
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
