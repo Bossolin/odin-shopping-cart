@@ -1,0 +1,7 @@
+.item {
+  width: clamp(200px, 25%, 25%);
+}
+
+.item img {
+  max-width: 25%;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/Shop.css";
+import ItemCard from "./ItemCard";
 
 const Shop = () => {
   const [items, setItems] = useState(null);
@@ -23,13 +24,7 @@ const Shop = () => {
         {!items ? (
           <div>Loading...</div>
         ) : (
-          items.map((item) => (
-            <div key={item.id} className="item">
-              <img src={item.image} className="item-img" />
-              <div className="item-title">{item.title}</div>
-              <div className="item-price">{item.price} $</div>
-            </div>
-          ))
+          items.map((item) => <ItemCard item={item} key={item.id} />)
         )}
       </div>
     </div>
