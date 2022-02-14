@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../style/Shop.css";
 import ItemCard from "./ItemCard";
 
-const Shop = () => {
+const Shop = ({ cart, setCart }) => {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
@@ -24,7 +24,9 @@ const Shop = () => {
         {!items ? (
           <div>Loading...</div>
         ) : (
-          items.map((item) => <ItemCard item={item} key={item.id} />)
+          items.map((item) => (
+            <ItemCard item={item} key={item.id} cart={cart} setCart={setCart} />
+          ))
         )}
       </div>
     </div>

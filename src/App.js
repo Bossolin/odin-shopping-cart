@@ -9,6 +9,7 @@ import "./style/App.css";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
+  const [cart, setCart] = useState([]);
 
   return (
     <BrowserRouter>
@@ -17,9 +18,14 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route
+              path="/shop"
+              element={<Shop cart={cart} setCart={setCart} />}
+            />
           </Routes>
-          {showCart && <Cart setShowCart={setShowCart} />}
+          {showCart && (
+            <Cart setShowCart={setShowCart} cart={cart} setCart={setCart} />
+          )}
         </div>
         <Footer />
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/ItemCard.css";
 
-const ItemCard = ({ item }) => {
+const ItemCard = ({ item, cart, setCart }) => {
   return (
     <div className="item">
       <img src={item.image} className="item-img" />
