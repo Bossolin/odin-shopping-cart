@@ -5,3 +5,22 @@
 .item img {
   max-width: 25%;
 }
+
+.item-interface {
+  display: flex;
+  justify-content: space-around;
+}
+  
+.item-interface button {
+  all: unset;
+  padding: .1rem .5rem;
+  color: white;
+  background-color: #986B77;
+  border: 1px white solid;
+  
+}
+
+.item-buy {
+  color: #986B77;
+  /* margin-left: auto; */
+}

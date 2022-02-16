@@ -23,9 +23,7 @@ function App() {
               element={<Shop cart={cart} setCart={setCart} />}
             />
           </Routes>
-          {showCart && (
-            <Cart setShowCart={setShowCart} cart={cart} setCart={setCart} />
-          )}
+          {showCart && <Cart setShowCart={setShowCart} setCart={setCart} />}
         </div>
         <Footer />
       </div>
