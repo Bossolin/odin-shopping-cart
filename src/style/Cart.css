@@ -7,3 +7,18 @@
   height: 100%;
   width: clamp(414px, 25%, 30%);
 }
+
+.order-items {
+  height: 70vh;
+  overflow: auto;
+}
+
+.order-item-image {
+  max-width: 25%;
+}
+
+.order-item-counter {
+  display: flex;
+  justify-content: center;
+
+}
