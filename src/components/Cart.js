@@ -5,20 +5,18 @@ import { faX } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Cart = ({ setShowCart, cart, setCart }) => {
-  const handleClick = () => {
-    setShowCart((prevState) => !prevState);
-  };
-
   const order = [];
   let orderTotal = 0;
 
   for (let item in cart) {
     order.push(cart[item]);
 
-    console.log(cart[item].price, cart[item].amount);
-
     orderTotal += cart[item].price * cart[item].amount;
   }
+
+  const handleClick = () => {
+    setShowCart((prevState) => !prevState);
+  };
 
   const decrement = (item) => {
     const newState = { ...cart };

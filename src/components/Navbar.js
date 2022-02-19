@@ -4,7 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faShop } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
-const Navbar = ({ setShowCart }) => {
+const Navbar = ({ setShowCart, cart }) => {
+  let itemCounter = 0;
+
+  for (let item in cart) {
+    itemCounter += cart[item].amount;
+  }
+
   const handleClick = () => {
     setShowCart((prevState) => !prevState);
   };
@@ -20,7 +26,12 @@ const Navbar = ({ setShowCart }) => {
       <NavLink to="/shop" className="nav-shop">
         Shop
       </NavLink>
-      <FontAwesomeIcon icon={faCartShopping} onClick={handleClick} />
+      <div className="nav-cart">
+        <FontAwesomeIcon icon={faCartShopping} onClick={handleClick} />
+        {itemCounter ? (
+          <div className="nav-cart-counter">{itemCounter}</div>
+        ) : null}
+      </div>
     </div>
   );
 };
