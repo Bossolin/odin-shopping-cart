@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../style/Shop.css";
 import ItemCard from "./ItemCard";
 
-const Shop = ({ setCart }) => {
+const Shop = ({ setCart, cart }) => {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
@@ -10,7 +10,6 @@ const Shop = ({ setCart }) => {
       const response = await fetch(url);
       const data = await response.json();
 
-      console.log(data);
       setItems(data);
     };
 
@@ -25,7 +24,7 @@ const Shop = ({ setCart }) => {
           <div>Loading...</div>
         ) : (
           items.map((item) => (
-            <ItemCard item={item} key={item.id} setCart={setCart} />
+            <ItemCard item={item} key={item.id} setCart={setCart} cart={cart} />
           ))
         )}
       </div>

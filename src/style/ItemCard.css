@@ -9,18 +9,14 @@
 .item-interface {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: #986B77;
 }
   
-.item-interface button {
-  all: unset;
-  padding: .1rem .5rem;
+.item-interface h3 {
   color: white;
-  background-color: #986B77;
-  border: 1px white solid;
-  
 }
 
 .item-buy {
-  color: #986B77;
-  /* margin-left: auto; */
+  color: white;
 }

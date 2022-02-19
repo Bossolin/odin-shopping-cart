@@ -13,10 +13,12 @@ const Cart = ({ setShowCart, cart, setCart }) => {
     <div className="cart">
       <FontAwesomeIcon icon={faX} onClick={handleClick} />
       <h2>Cart</h2>
-      {cart.length === 0 && (
+      {cart.length === 0 ? (
         <Link to="/shop" onClick={handleClick}>
           Go shop
         </Link>
+      ) : (
+        cart.map((item, i) => <div key={i}>{item.title}</div>)
       )}
     </div>
   );
