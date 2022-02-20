@@ -26,8 +26,8 @@ const Navbar = ({ setShowCart, cart }) => {
       <NavLink to="/shop" className="nav-shop">
         Shop
       </NavLink>
-      <div className="nav-cart">
-        <FontAwesomeIcon icon={faCartShopping} onClick={handleClick} />
+      <div className="nav-cart" onClick={handleClick}>
+        <FontAwesomeIcon icon={faCartShopping} />
         {itemCounter ? (
           <div className="nav-cart-counter">{itemCounter}</div>
         ) : null}

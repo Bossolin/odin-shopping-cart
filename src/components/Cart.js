@@ -10,7 +10,6 @@ const Cart = ({ setShowCart, cart, setCart }) => {
 
   for (let item in cart) {
     order.push(cart[item]);
-
     orderTotal += cart[item].price * cart[item].amount;
   }
 
@@ -51,7 +50,7 @@ const Cart = ({ setShowCart, cart, setCart }) => {
           <div className="order-items">
             {order.map((item, i) => (
               <div key={i}>
-                <img src={item.image} className="order-item-image" />
+                <img src={item.image} className="order-item-image" alt="" />
                 <div className="order-item-title">{item.title}</div>
                 <div className="order-item-price">
                   {(item.price * item.amount).toFixed(2)} $

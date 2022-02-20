@@ -20,7 +20,7 @@ const ItemCard = ({ item, setCart, cart }) => {
 
   return (
     <div className="item">
-      <img src={item.image} className="item-img" />
+      <img src={item.image} className="item-img" alt="" />
       <div className="item-title">{item.title}</div>
       <div className="item-price">{item.price} $</div>
       <button className="item-interface" onClick={addToCart}>

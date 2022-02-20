@@ -1,4 +1,4 @@
-# odin-memory-card
+# odin-shopping-cart
 
 [Live Demo](https://bossolin.github.io/odin-shopping-cart/)
 

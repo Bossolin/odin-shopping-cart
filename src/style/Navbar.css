@@ -23,6 +23,7 @@ border-bottom: white 2px solid;
 
 .nav-cart {
   position: relative;
+  cursor: pointer;
 }
 
 .nav-cart-counter {
