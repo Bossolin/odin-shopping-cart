@@ -1,8 +1,13 @@
+.shop {
+  background-color: #F3EED9;
+  padding: 2rem;
+}
+
 .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  row-gap: 1rem;
+  gap: 1rem;
 }
 

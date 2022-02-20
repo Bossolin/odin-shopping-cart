@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, libero
         atque totam fugit veritatis ipsum sint volupttem ea, odio delectus non

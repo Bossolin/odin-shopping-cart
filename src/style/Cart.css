@@ -1,11 +1,17 @@
 .cart {
   position: fixed;
-  background-color: #986B77;
+  background-color: #FF9EAC;
   color: white;
   right: 0;
   top: 0;
   height: 100%;
   width: clamp(414px, 25%, 30%);
+}
+
+.cart-x {
+  padding: 1.1rem 1rem;
+  margin-left: 87%;
+  cursor: pointer;
 }
 
 .order-items {

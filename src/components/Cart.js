@@ -39,8 +39,7 @@ const Cart = ({ setShowCart, cart, setCart }) => {
 
   return (
     <div className="cart">
-      <FontAwesomeIcon icon={faX} onClick={handleClick} />
-      <h2>Cart</h2>
+      <FontAwesomeIcon icon={faX} onClick={handleClick} className="cart-x" />
       {order.length === 0 ? (
         <Link to="/shop" onClick={handleClick}>
           Go shop

@@ -1,20 +1,34 @@
 .item {
-  width: clamp(200px, 25%, 25%);
+  padding: .5rem;
+  height: 350px;
+  width: clamp(200px, 20%, 25%);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  text-align: center;
 }
 
 .item img {
-  max-width: 25%;
+  width: 50%;
+  max-height: 50%;
 }
 
 .item-interface {
+  padding: .5rem 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #986B77;
+  color: #F3EED9;
+  background-color: black;
+  border: none;
 }
-  
-.item-interface h3 {
-  color: white;
+
+.item-interface:active {
+  color: black;
+  background-color: white;
 }
 
 .item-buy {
