@@ -12,7 +12,7 @@ function App() {
   const [cart, setCart] = useState({});
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/repo-name">
       <div className="App">
         <Navbar setShowCart={setShowCart} cart={cart} />
         <div className="content">
