@@ -12,7 +12,7 @@ function App() {
   const [cart, setCart] = useState({});
 
   return (
-    <BrowserRouter basename="/repo-name">
+    <BrowserRouter basename="/odin-shopping-cart">
       <div className="App">
         <Navbar setShowCart={setShowCart} cart={cart} />
         <div className="content">
