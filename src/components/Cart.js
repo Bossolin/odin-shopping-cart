@@ -48,16 +48,18 @@ const Cart = ({ setShowCart, cart, setCart }) => {
         <div className="cart-order">
           <div className="order-items">
             {order.map((item, i) => (
-              <div key={i}>
+              <div className="order-item" key={i}>
                 <img src={item.image} className="order-item-image" alt="" />
-                <div className="order-item-title">{item.title}</div>
-                <div className="order-item-price">
-                  {(item.price * item.amount).toFixed(2)} $
-                </div>
-                <div className="order-item-counter">
-                  <button onClick={() => decrement(item)}>-</button>
-                  <p>{item.amount}</p>
-                  <button onClick={() => increment(item)}>+</button>
+                <div className="order-info">
+                  <div className="order-item-title">{item.title}</div>
+                  <div className="order-item-price">
+                    {(item.price * item.amount).toFixed(2)} $
+                  </div>
+                  <div className="order-item-counter">
+                    <button onClick={() => decrement(item)}>-</button>
+                    <p>{item.amount}</p>
+                    <button onClick={() => increment(item)}>+</button>
+                  </div>
                 </div>
               </div>
             ))}

@@ -24,7 +24,7 @@ const ItemCard = ({ item, setCart, cart }) => {
       <div className="item-title">{item.title}</div>
       <div className="item-price">{item.price} $</div>
       <button className="item-interface" onClick={addToCart}>
-        <h3>Add to cart</h3>
+        <div>Add to cart</div>
         <FontAwesomeIcon icon={faCartShopping} className="item-buy" />
       </button>
     </div>

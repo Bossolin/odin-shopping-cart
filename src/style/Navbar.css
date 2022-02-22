@@ -5,12 +5,12 @@
   gap: 3rem;
   padding: 1rem 2rem;
   background-color: #E3284D;
-  color: #F3EED9;
+  color: white;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #F3EED9;
+  color: white;
 }
 
 .shop-icon {
@@ -18,7 +18,7 @@
 }
 
 .active {
-border-bottom: #F3EED9 2px solid;
+border-bottom: white 2px solid;
 }
 
 .nav-cart {
@@ -36,7 +36,7 @@ border-bottom: #F3EED9 2px solid;
   position: absolute;
   left: -20%;
   bottom: -10%;
-  background-color: #F3EED9;
+  background-color: white;
   color: #E3284D;
   border-radius: 50%;
  
