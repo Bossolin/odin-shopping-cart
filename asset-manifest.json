@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/odin-shopping-cart/static/css/main.0633874e.css",
+    "main.js": "/odin-shopping-cart/static/js/main.20b38243.js",
+    "index.html": "/odin-shopping-cart/index.html",
+    "main.0633874e.css.map": "/odin-shopping-cart/static/css/main.0633874e.css.map",
+    "main.20b38243.js.map": "/odin-shopping-cart/static/js/main.20b38243.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0633874e.css",
+    "static/js/main.20b38243.js"
+  ]
+}
