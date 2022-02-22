@@ -10,6 +10,7 @@
   background-color: white;
   text-align: center;
   border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(68, 68, 68);
 }
 
 
@@ -30,6 +31,7 @@
   background-color: black;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -45,5 +47,8 @@
 
 .item-buy {
   color: white;
+}
 
+.item-buy:active {
+  color: black;
 }

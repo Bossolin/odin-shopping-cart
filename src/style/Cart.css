@@ -1,11 +1,24 @@
-.cart {
+.cart-cover {
   position: fixed;
-  background-color: #FF9EAC;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+}
+
+.cart {
+  z-index: 2;
+  position: fixed;
+  background-color: #ff9eac;
   color: white;
   right: 0;
   top: 0;
   height: 100%;
   width: clamp(414px, 25%, 30%);
+  border-left: 1px solid black;
 }
 
 .cart-x {
@@ -14,10 +27,35 @@
   cursor: pointer;
 }
 
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cart-empty-back {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.2rem 2rem;
+  margin: 0 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-order {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .order-items {
   height: 70vh;
   overflow: auto;
-  background-color: #F3EED9;
+  background-color: #f3eed9;
   color: black;
   padding: 1rem;
   display: flex;
@@ -29,8 +67,10 @@
   display: flex;
   gap: 1rem;
   background-color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px black solid;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px rgb(54, 54, 54);
 }
 
 .order-info {
@@ -56,7 +96,8 @@
   background-color: black;
   color: white;
   margin: 0 1rem;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 4px;
 }
 
 .order-item-counter button:active {
@@ -66,7 +107,7 @@
 }
 
 .order-item-counter p {
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-size: large;
 }
 
@@ -76,4 +117,29 @@
   font-size: 1.1rem;
   text-align: center;
   padding: 1rem;
+}
+
+.order-back {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #00bec8;
+  color: white;
+  text-decoration: none;
+  margin: 0 3rem;
+  padding: 0.1rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-checkout {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.2rem 2rem;
+  margin: 0 3rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
