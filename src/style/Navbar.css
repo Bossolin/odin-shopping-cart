@@ -1,10 +1,12 @@
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
   padding: 1rem 2rem;
-  background-color: #E3284D;
+  background-color: #e3284d;
   color: white;
 }
 
@@ -18,7 +20,7 @@
 }
 
 .active {
-border-bottom: white 2px solid;
+  border-bottom: white 2px solid;
 }
 
 .nav-cart {
@@ -27,9 +29,9 @@ border-bottom: white 2px solid;
 }
 
 .nav-cart-counter {
-  font-size: .6rem;
-  height: .8rem;
-  width: .8rem;
+  font-size: 0.6rem;
+  height: 0.8rem;
+  width: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +39,6 @@ border-bottom: white 2px solid;
   left: -20%;
   bottom: -10%;
   background-color: white;
-  color: #E3284D;
+  color: #e3284d;
   border-radius: 50%;
- 
-
 }
